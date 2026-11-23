@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Memo & Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Memo & เตือนความจำ</h1>
+        
+        <div class="input-group">
+            <input type="text" id="memoTitle" placeholder="หัวข้อบันทึก (เช่น ซื้อของ, ประชุม)...">
+            <textarea id="memoContent" rows="3" placeholder="รายละเอียดเพิ่มเติม..."></textarea>
+            <label for="reminderTime">ตั้งเวลาแจ้งเตือน (ไม่บังคับ):</label>
+            <input type="datetime-local" id="reminderTime">
+            <button onclick="addMemo()">+ บันทึก Memo</button>
+        </div>
+
+        <div id="memoList" class="memo-grid">
+            <!-- รายการ Memo จะแสดงตรงนี้ -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
